@@ -30,11 +30,10 @@ Secret: 44c0ba3715851244
     <ul class="imageList">
         <li ng-repeat="picture in results.photos.photo">
             <div class="caption">
-                <p>{{ picture.title }}</p>
+                <p>{{ picture.title }} </p>
             </div>
             <a href="https://farm{{ picture.farm }}.staticflickr.com/{{ picture.server }}/{{ picture.id }}_{{ picture.secret }}_b.jpg" target="_blank">
-                <div class="div-image" ng-style="{ 'background-image': 'url(https://farm{{ picture.farm }}.staticflickr.com/{{ picture.server }}/{{ picture.id }}_{{ picture.secret }}_b.jpg)','background-position':'center','background-size': 'cover' }">
-                </div>
+                <div class="div-image" style='background-image: url("https://farm{{ picture.farm }}.staticflickr.com/{{ picture.server }}/{{ picture.id }}_{{ picture.secret }}_b.jpg"); background-size: cover; background-position: center center;'></div>
             </a>
         </li>
     </ul>
