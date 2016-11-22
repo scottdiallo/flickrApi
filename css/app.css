@@ -1,16 +1,35 @@
 body {
-    background-color: #ff0084;
+    padding: 0;
+     margin: 0;
+     font-family: helveitca neue;
+     position: absolute;
 }
 
-img {
-    height: 200px;
-    width: 500px;
+.module {
+      width: 100%;
+    height: 100vh;
+    
+    background-size: cover;
+}
+
+.background-image{
+    height: 100vh;
+      width: 100%;
+    opacity: 0.67;
+}
+
+#logo img {
+        height: 130px;
+    width: 130px;
 }
 
 .imageList {
     width: 70%;
     margin-left: auto;
     margin-right: auto;
+    padding-top: 6%;
+        position: absolute;
+    z-index: 1;
 }
 
 .imageList li {
@@ -49,6 +68,11 @@ img {
     -webkit-box-shadow: inset 0px 0px 14px 3px rgba(0, 0, 0, 0.75);
     -moz-box-shadow: inset 0px 0px 14px 3px rgba(0, 0, 0, 0.75);
     box-shadow: inset 0px 0px 14px 3px rgba(0, 0, 0, 0.75);
+}
+
+.search-field{
+    position: absolute;
+    z-index: 1;
 }
 
 

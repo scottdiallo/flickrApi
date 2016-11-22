@@ -10,13 +10,22 @@ Secret: 44c0ba3715851244
     <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <title>Flickr Image Searcher</title>
     <link rel="stylesheet" href="css/app.css">
+ <div id="logo">
+            <img src="images/logo.png" alt="logo">
+        </div> 
 </head>
 
 <body ng-controller="myCtrl">
-    <form ng-submit="search()">
-        <div id="logo">
-            <img src="images/logo.png" alt="">
-        </div>
+
+<!-- <div id="lol-emoji">
+ <img src="images/pinky-flower.jpeg" alt=" emoji">
+ <p>YOU NEED A BIGGER SIZE SCREEN LOL</p>
+</div>
+ -->
+<!-- <div class="module" >
+<div class="module darken"> -->
+<!-- <div class="background-image" src="images/sky-rose.jpg" > -->
+    <form ng-submit="search()" class="search-field">
         <h1 class="hero-text">Flickr Searcher</h1>
         <label for="flickrImageSearcher">
             <input type="text" placeholder="Search your image here..." ng-model="searchTerm" ng-hide="isSearching" required>
@@ -24,9 +33,11 @@ Secret: 44c0ba3715851244
                 <span class="glyphicon glyphicon-refresh glyphicon-refresh-animate"></span>
             </div>
         </label>
-        <button type="submit">Search</button>
+        <button type="submit">Go</button>
     </form>
+    <hr>
     <!--    content-->
+    <div>
     <ul class="imageList">
         <li ng-repeat="picture in results.photos.photo">
             <div class="caption">
@@ -37,9 +48,17 @@ Secret: 44c0ba3715851244
             </a>
         </li>
     </ul>
+    <img class="background-image" src="images/sky-rose.jpg" alt="background-image"/> 
+    </div>
+  <!-- <img class="background-image" src="images/sky-rose.jpg" alt="background-image"/>  -->
+ 
     <script src="https://code.angularjs.org/1.4.9/angular.min.js" type="text/javascript"></script>
     <script type="text/javascript" src="https://code.angularjs.org/1.4.9/angular-animate.js"></script>
     <script src="js/index.js"></script>
+<!--     </div>
+ -->  <!--   </div>
+    </div> -->
+
 </body>
 
 </html>
