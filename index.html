@@ -28,13 +28,14 @@ Secret: 44c0ba3715851244
     <form ng-submit="search()" class="search-field">
         <h1 class="hero-text">Flickr Searcher</h1>
         <label for="flickrImageSearcher">
-            <input type="text" placeholder="Search your image here..." ng-model="searchTerm" ng-hide="isSearching" required>
+            <input type="text" placeholder="Search your image here..." autofocus="" ng-model="searchTerm" ng-hide="isSearching" required>
             <div ng-show="isSearching">
                 <span class="glyphicon glyphicon-refresh glyphicon-refresh-animate"></span>
             </div>
         </label>
-        <button type="submit">Go</button>
+        
     </form>
+    <button type="submit">Go</button>
     <hr>
     <!--    content-->
     <div>

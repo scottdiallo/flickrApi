@@ -73,8 +73,32 @@ body {
 .search-field{
     position: absolute;
     z-index: 1;
+    margin-left: 45%;
+    padding-right: 50%;
 }
-
+input{
+    
+    height: 30px;
+    width: 14rem;
+    font-size: 16px;
+}
+button{
+    margin-top: 8px;
+    padding: 6px;
+    width: 4rem;
+    border-radius: 10px;
+    font-size: 17px;
+    font-weight: bold;
+    background-color: #0063db;
+    color: white;
+    outline: none;
+    border: transparent;
+    margin-left: 63%;
+    margin-right: 50%;
+    margin-top: 6.1%;
+        position: absolute;
+    z-index: 1;
+}
 
 /*large laptop*/
 
